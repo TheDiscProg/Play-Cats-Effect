@@ -1,0 +1,14 @@
+### GET ToDo list
+GET http://localhost:9000/todo
+
+### POST to create an item
+POST http://localhost:9000/todo HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "Run to the shop",
+  "isDone": false
+}
+
+### DELETE an item
+DELETE http://localhost:9000/todo/2 HTTP/1.1
