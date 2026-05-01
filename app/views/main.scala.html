@@ -1,0 +1,24 @@
+@(title: String)(content: Html)(implicit assets: controllers.AssetsFinder)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>@title</title>
+
+            <!-- Favicon -->
+        <link rel="icon" type="image/png" href="@assets.path("images/favicon.png")">
+
+            <!-- Styles -->
+        <link rel="stylesheet" href="@assets.path("stylesheets/main.css")">
+
+            <!-- Scripts -->
+        <script src="@assets.path("javascripts/main.js")" defer></script>
+    </head>
+
+    <body>
+    @content
+    </body>
+</html>

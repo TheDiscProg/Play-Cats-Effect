@@ -1,9 +1,11 @@
 ### GET ToDo list
 GET http://localhost:9000/todo
+Authorization: "secret"
 
 ### POST to create an item
 POST http://localhost:9000/todo HTTP/1.1
 Content-Type: application/json
+Authorization: "secret"
 
 {
   "description": "Run to the shop",
@@ -12,3 +14,4 @@ Content-Type: application/json
 
 ### DELETE an item
 DELETE http://localhost:9000/todo/2 HTTP/1.1
+Authorization: "secret"

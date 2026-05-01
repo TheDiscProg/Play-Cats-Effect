@@ -24,8 +24,6 @@ lazy val root = (project in file("."))
   .settings(
     commonSettings,
     name := "Play-Cats-Effect",
-    Compile / run / javaOptions += "-Dlogback.debug=true",
-    Compile / run / javaOptions += "-Dlogback.configurationFile=logback.xml",
     Compile / doc / sources := Seq.empty,
     Compile /scalaSource := baseDirectory.value / "src" / "main" / "scala",
     Compile / resourceDirectory := baseDirectory.value / "src" / "main" / "resources",

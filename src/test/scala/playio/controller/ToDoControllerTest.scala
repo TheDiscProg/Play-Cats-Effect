@@ -30,7 +30,6 @@ class ToDoControllerTest extends PlaySpec {
     }
   }
 
-
   // --- Mocks service ---
   private lazy val mockService = new ToDoServiceAlgebra[IO]() {
     def getAll(): IO[List[ToDoItem]] =
