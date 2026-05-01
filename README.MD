@@ -21,7 +21,9 @@ HTTP layer and core application logic. For more information, see the section "Be
 The directory layout for the project does not follow the standard Play directory structure, but is instead based on the 
 SBT project layout:
 
-- `base`:- This is where we define all business logic, such as case classes and traits.
+- `app`:- As per standard Play app, for example, `app/views` for all `.scala.html` files
+- `base`:- This is where we define all business logic, such as case classes and traits
+- `public`:- As per standard Play public folders for CSS, images and JS files
 - `src/main/resources`:- This is where we define all resources, such as configuration files
 - `src/main/scala`: Scala source code for the application as per:
   - `playio.controllers`:- This is where we define all HTTP endpoints
