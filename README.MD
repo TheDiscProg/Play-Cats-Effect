@@ -44,9 +44,8 @@ code, such as controllers, in the `controllers` package. We can put pure FP code
 
 
 #### AppComponents
-This class is responsible for creating all components that are needed by the application and wiring them together. We can
-use `IO` for the runtime execution context and `Resource` for managing resources. In addition, we also define `Router` by
-defining all routes, instead of using Play's `route` file.
+As we are not using DI, this class is responsible for creating all components that are needed by the application and wiring them together. We can use `IO` for the runtime execution context and `Resource` for managing resources. In addition, we also define `Router` by defining all routes, instead of using Play's `route` file.
+
 
 #### IOActionBuilder
 This is the integration layer between Play's request/response model and Cats Effect's `IO` model. It gets passed to any 
